@@ -1,0 +1,140 @@
+/* Base styles */
+body, h1, h2, p, ul, li, a, button, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a2e;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0f3460;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #e94560;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e94560;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #16213e;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+#record-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#record-btn, #pause-btn, #save-btn {
+    background-color: #e94560;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#record-btn:hover, #pause-btn:hover, #save-btn:hover {
+    background-color: #d63447;
+}
+
+#upload-btn {
+    padding: 10px;
+    border: 2px solid #e94560;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #e94560;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#upload-btn:hover {
+    background-color: #e94560;
+    color: #ffffff;
+}
+
+#my-records h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e94560;
+}
+
+#records-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#records-list li {
+    background-color: #0f3460;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+#records-list li:hover {
+    background-color: #16213e;
+}
+
+#records-list li button {
+    background-color: #e94560;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+#records-list li button:hover {
+    background-color: #d63447;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #cccccc;
+}

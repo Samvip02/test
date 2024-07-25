@@ -1,0 +1,23 @@
+ Server-Side Transcription with Whisper
+Since OpenAI doesn't provide an API for Whisper, you can run Whisper locally or on a server where you have access to a machine with the required hardware (CPU/GPU) and software environment. Here's an outline:
+
+Setting Up Whisper Locally or on a Server
+Install Whisper: Follow the installation instructions from the Whisper GitHub repository.
+
+Create a Transcription API Endpoint: Set up an API endpoint on your server to accept audio files and run Whisper for transcription.
+
+Example Backend Script (using Python with Flask)......i've added rhid part in the python code
+
+
+
+Backend:
+
+Install necessary Python packages: flask, whisper, openai.
+
+Replace 'your_openai_api_key' with your actual OpenAI API key.
+
+Ensure the uploads directory is present for storing temporary audio files.
+
+Frontend:
+
+Replace 'https://your-backend-url/transcribe' with the actual URL where your Flask server is hosted.

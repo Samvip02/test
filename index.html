@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Note Recorder</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI Voice Note Recorder</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#my-records">My Records</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="record-section">
+            <div id="record-controls">
+                <button id="record-btn">🎤 Start Recording</button>
+                <button id="pause-btn" style="display: none;">⏸ Pause</button>
+                <button id="save-btn" style="display: none;">💾 Save</button>
+                <input type="file" id="upload-btn" accept="audio/*,video/*" multiple>
+            </div>
+            <div id="my-records">
+                <h2>My Records</h2>
+                <ul id="records-list">
+                    <!-- List of recordings will be dynamically added here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI Voice Note Recorder. All rights reserved.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
